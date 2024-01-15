@@ -4,7 +4,7 @@ return {
     event = "LazyFile",
     dependencies = {
       { "folke/neoconf.nvim", cmd = "Neoconf", config = false, dependencies = { "nvim-lspconfig" } },
-      { "folke/neodev.nvim",  opts = {} },
+      { "folke/neodev.nvim", opts = {} },
       "mason.nvim",
       "williamboman/mason-lspconfig.nvim",
     },
@@ -39,8 +39,8 @@ return {
         pylsp = {
           plugins = {
             pycodestyle = {
-              ignore = { 'E266', 'W503', 'W504' },
-              maxLineLength = 100
+              ignore = { "E266", "W503", "W504" },
+              maxLineLength = 100,
             },
             autopep8 = {
               enabled = false,
@@ -49,18 +49,25 @@ return {
               enabled = false,
               column_limit = 100,
             },
-          }
+          },
         },
       },
-    }
+    },
+  },
+  {
+    "williamboman/mason.nvim",
+    opts = function(_, opts)
+      table.insert(opts.ensure_installed, "black")
+      table.insert(opts.ensure_installed, "isort")
+    end,
   },
   {
     "stevearc/conform.nvim",
-    optional = true,
+    optional = false,
     opts = {
       formatters_by_ft = {
         ["python"] = { "black", "isort" },
       },
     },
-  }
+  },
 }

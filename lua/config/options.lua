@@ -13,9 +13,9 @@ vim.bo.autoindent = true
 vim.opt.updatetime = 750
 
 -- set leader key
-vim.keymap.set('n', 'ù', '<Nop>');
-vim.g.mapleader = 'ù';
-vim.g.maplocalleader = 'ù';
+vim.keymap.set("n", "ù", "<Nop>")
+vim.g.mapleader = "ù"
+vim.g.maplocalleader = "ù"
 
 vim.diagnostic.config({
   virtual_text = false,
@@ -24,10 +24,10 @@ vim.diagnostic.config({
   underline = true,
   severity_sort = false,
   float = {
-    border = 'rounded',
-    source = 'always',
-    header = '',
-    prefix = '',
+    border = "rounded",
+    source = "always",
+    header = "",
+    prefix = "",
   },
 })
 
