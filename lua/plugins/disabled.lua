@@ -5,4 +5,5 @@ return {
   { "folke/flash.nvim", enabled = false },
   { "nxstynate/catpuccin.nvim", enabled = false },
   { "gbprod/yanky.nvim", enabled = false },
+  { "akinsho/bufferline.nvim", enabled = false },
 }
