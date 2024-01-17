@@ -21,8 +21,8 @@ return {
       require("nvim-surround").setup({
         -- Configuration here, or leave empty to use defaults
         keymaps = {
-          insert = "g<C-g>s",
-          insert_line = "g<C-g>S",
+          -- insert = "<C-g>s",
+          -- insert_line = "<C-g>S",
           normal = "gys",
           normal_cur = "gyss",
           normal_line = "gyS",
