@@ -6,4 +6,5 @@ return {
   { "nxstynate/catpuccin.nvim", enabled = false },
   { "gbprod/yanky.nvim", enabled = false },
   { "akinsho/bufferline.nvim", enabled = false },
+  { "echasnovski/mini.surround", enabled = false },
 }

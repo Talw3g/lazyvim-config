@@ -38,10 +38,6 @@ return {
         },
         pylsp = {
           plugins = {
-            pycodestyle = {
-              ignore = { "E266", "W503", "W504" },
-              maxLineLength = 100,
-            },
             autopep8 = {
               enabled = false,
             },
