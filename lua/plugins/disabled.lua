@@ -3,8 +3,8 @@ return {
   { "folke/noice.nvim", enabled = false },
   { "folke/tokyonight.nvim", enabled = false },
   { "folke/flash.nvim", enabled = false },
-  { "nxstynate/catpuccin.nvim", enabled = false },
   { "gbprod/yanky.nvim", enabled = false },
   { "akinsho/bufferline.nvim", enabled = false },
   { "echasnovski/mini.surround", enabled = false },
+  { "catppuccin", enabled = false },
 }
