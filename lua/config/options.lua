@@ -34,3 +34,5 @@ vim.diagnostic.config({
 -- use TAB to go to next LSP diagnostic
 vim.keymap.set("n", "<Tab>", vim.diagnostic.goto_next, {})
 vim.keymap.set("n", "<S-Tab>", vim.diagnostic.goto_prev, {})
+
+vim.filetype.add({ extension = { sitemap = "java" } })
