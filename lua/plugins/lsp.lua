@@ -63,7 +63,7 @@ return {
     optional = false,
     opts = {
       formatters_by_ft = {
-        ["python"] = { "isort" },
+        ["python"] = { "black", "isort" },
       },
     },
   },
