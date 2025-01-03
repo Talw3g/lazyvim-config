@@ -36,3 +36,4 @@ vim.keymap.set("n", "<Tab>", vim.diagnostic.goto_next, {})
 vim.keymap.set("n", "<S-Tab>", vim.diagnostic.goto_prev, {})
 
 vim.filetype.add({ extension = { sitemap = "java" } })
+vim.g.lazyvim_picker = "telescope"
